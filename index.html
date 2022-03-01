@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leonor</title>
+    <link rel="stylesheet" href="./style/nullstyle.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/mobile.css">
+</head>
+
+<body>
+
+    <header id="home">
+        <div class="wrapper">
+            <nav class="header__nav">
+                <span class="nav__logo"><a href="#home" class="nav__logo-link">Leonor</a></span>
+                <ul class="nav__list list">
+                    <li class="list__item"><a class="link" href="#home">Home</a></li>
+                    <li class="list__item"><a class="link" href="#about">About</a></li>
+                    <li class="list__item"><a class="link" href="#skills">Skills</a></li>
+                    <li class="list__item"><a class="link" href="#portfolio">Portfolio</a></li>
+                    <li class="list__item"><a class="link" href="#contact">Contact me</a></li>
+                </ul>
+                <div class="hamburger__menu">
+                    <input id="menu__toggle" type="checkbox">
+                    <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                    </label>
+
+                    <ul class="menu__box">
+                        <li><a href="#home" class="menu__item">Home</a></li>
+                        <li><a href="#about" class="menu__item">About</a></li>
+                        <li><a href="#skills" class="menu__item">Skills</a></li>
+                        <li><a href="#portfolio" class="menu__item">Portfolio</a></li>
+                        <li><a href="#contact" class="menu__item">Contact me</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <article class="header__title center">
+                <p class="title">Hi, I’m Leonor</p>
+                <p class="descr">Frontend developer and web designer</p>
+                <p class="descr">Medium level experience in web design and
+                    development knowledge.</p>
+            </article>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+
+        <div class="wrapper">
+            <div class="about__title center">
+                <p class="title">About Me</p>
+                <p class="descr">My introduction</p>
+            </div>
+            <div class="about__info">
+                <div class="flex">
+                    <img src="./img/me.jpg" alt="my avatar">
+
+                    <div class="text-info text-info__flex">
+                        <p class="descr">Web developer/web designer with
+                            medium knowledge. I have been doing this for about 8 months.</p>
+
+                        <div class="subtitle-info subtitle-info__flex">
+                            <p class="subtitle">7+ months</p>
+                            <p class="descr">Years <br>
+                                experience</p>
+                        </div>
+                        <div class="subtitle-info subtitle-info__flex">
+                            <p class="subtitle">2</p>
+                            <p class="descr">Comlited <br>
+                                web projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="wrapper">
+            <div class="about__title center">
+                <p class="title">Skills</p>
+                <p class="descr">My technical level</p>
+            </div>
+            <div class="skills-flex">
+                <div class="front">
+
+                    <div class="text-block">
+                        <div class="subtitle">Frontend developer</div>
+                        <p class="descr">More 6 months</p>
+                    </div>
+
+                    <div class="pr-bar__html">
+                        <span class="subtitle">HTML</span>
+                        <span class="descr">80%</span>
+                        <div class="progressbar">
+                            <span class="progress-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="pr-bar__css">
+
+                        <span class="subtitle">CSS</span>
+                        <span class="descr">70%</span>
+
+                        <div class="progressbar">
+                            <span class="progress-bar"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="designer">
+
+                    <div class="text-block">
+                        <div class="subtitle">Designer</div>
+                        <p class="descr">More 1 month</p>
+                    </div>
+
+                    <div class="pr-bar__figma">
+                        <span class="subtitle">Figma</span>
+                        <span class="descr">80%</span>
+                        <div class="progressbar">
+                            <span class="progress-bar"></span>
+                        </div>
+                    </div>
+
+                    <div class="pr-bar__photoshop">
+                        <span class="subtitle">Photoshop</span>
+                        <span class="descr">60%</span>
+                        <div class="progressbar">
+                            <span class="progress-bar"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio">
+        <div class="wrapper">
+            <div class="portfolio__title center">
+                <p class="title">Portfolio</p>
+                <p class="descr">My works</p>
+            </div>
+            <div class="portfolio__gallery">
+                <a class="project-link" target="_blank"
+                    href="https://travycatty.github.io/leonor/other%20projects/LOGOIPSUM/www/index.html">
+                    <div class="first"><img src="./img/Logoipsum_logo.svg" alt=""></div>
+                </a>
+                <a class="project-link" target="_blank"
+                    href="https://travycatty.github.io/leonor/other%20projects/k%20e%20a/index.html">
+                    <div class="second">
+                        <p>k e a</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="wrapper">
+            <div class="portfolio__title center">
+                <p class="title">Contact me</p>
+                <p class="descr">Get in touch</p>
+            </div>
+            <form class="form" action="#" method="get">
+                <div><input placeholder="Name" class="form-name" type="text" name="username" id=""></div>
+                <div><input placeholder="What’s your email?" class="form-email" type="email" name="useremale" id="">
+                </div>
+                <div><input placeholder="Your qeustion..." class="form-message" type="text"></div>
+                <button class="button" type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="flex-box">
+                <div class="footer__title">
+                    <p class="title">Leonor</p>
+                    <p class="descr">Frontend developer <br>
+                        Web designer</p>
+                </div>
+                <div class="social-links">
+                    <p class="subtitle">Follow me on</p>
+                    <ul class="links">
+                        <li><a href="##"><img src="./img/la_behance.svg" alt=""></a></li>
+                        <li><a href="##"><img src="./img/akar-icons_instagram-fill.svg" alt=""></a></li>
+                        <li><a href="##"><img src="./img/akar-icons_twitter-fill.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
