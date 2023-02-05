@@ -1,16 +1,21 @@
-$(document).ready(()=> {
-    $(document).on('click', '.hamburger__menu', ()=> {
-        $('.hamburger__menu, .menu__box').toggleClass('active');
-        $('body').toggleClass('lock');
-    });
-    $(document).on('click', '.header_list > li > a', e => {
+$(document).ready(() => {
+  $(document).on('click', '.hamburger__menu', () => {
+    $('.hamburger__menu, .menu__box').toggleClass('active')
+    $('body').toggleClass('lock')
+  })
+  $(document).on('click', '.header_list > li > a', (e) => {
+    /* Вот этот отрезок не обязателен! */
+    e.preventDefault()
+    let url = $(e.target).attr('href')
+    location.href = url
 
-        /* Вот этот отрезок не обязателен! */
-        e.preventDefault();
-        let url = $(e.target).attr('href');
-        location.href = url;
-
-        $('.hamburger__menu, .menu__box').removeClass('active');
-        $('body').removeClass('lock');
-    });
-});
+    $('.hamburger__menu, .menu__box').removeClass('active')
+    $('body').removeClass('lock')
+  })
+})
+function scrollTopTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}

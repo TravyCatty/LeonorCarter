@@ -8,6 +8,36 @@
     margin: 0 auto;
     padding: 20px;
 }
+.back-to-top {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 8rem;
+    bottom: 8rem;
+    width: 70px;
+    height: 70px;
+    background: #b71540;
+    border-radius: 50%;
+    visibility: hidden;
+    transition: 0.5s;
+    opacity: 0;
+    &:hover,
+    &:focus {
+        filter: brightness(1.5);
+        outline: none;
+    }
+    img {
+        transform: rotate(-90deg);
+        width: 40px;
+        margin-bottom: 6px;
+    }
+}
+.active {
+    visibility: visible;
+    opacity: 1;
+}
 header {
     width: 100%;
     margin-bottom: 10%;
@@ -236,7 +266,7 @@ img {
 .form-name,
 .form-email,
 .form-message {
-    background: #F6C6D3;
+    background: #f6c6d3;
     font-size: 24px;
     border-radius: 30px;
     margin: 10px;
@@ -273,8 +303,7 @@ img {
 .footer {
     background: #b71540;
     p {
-    color: #fff;
-
+        color: #fff;
     }
 }
 .flex-box {
