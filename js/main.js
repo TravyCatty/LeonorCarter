@@ -1,21 +1,18 @@
-$(document).ready(() => {
-  $(document).on('click', '.hamburger__menu', () => {
-    $('.hamburger__menu, .menu__box').toggleClass('active')
-    $('body').toggleClass('lock')
-  })
-  $(document).on('click', '.header_list > li > a', (e) => {
-    /* Вот этот отрезок не обязателен! */
-    e.preventDefault()
-    let url = $(e.target).attr('href')
-    location.href = url
+const btnScrollToTop = document.querySelector('#top-btn');
 
-    $('.hamburger__menu, .menu__box').removeClass('active')
-    $('body').removeClass('lock')
-  })
-})
-function scrollTopTop() {
+btnScrollToTop.addEventListener('click', () => {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth',
-  })
+    behavior: 'smooth'
+  });
+});
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+    document.getElementById("top-btn").style.display = "block";
+  } else {
+    document.getElementById("top-btn").style.display = "none";
+    document.getElementById("top-btn").style.cursorPointer = "none";
+  }
 }
